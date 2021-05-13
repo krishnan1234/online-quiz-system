@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmmUXmGmeP4LHLYRC3qq28vn4lFDo8qMPWig&usqp=CAU') no-repeat;
+    background-size: 100% 100%;
+     background-position: absolute;
+    /* background-color:rgb(2, 8, 92); */  
+    
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /*background: linear-gradient(#f00, #f0f);
+    clip-path: circle(30% at right 70%);*/
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 0%;
+   /*background: linear-gradient(#2196f3, #e91e63);
+    clip-path: circle(20% at 10% 10%);*/
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 2000px;
+    flex-wrap: wrap;
+    z-index: 1;
+   
+}
+
+.container .card {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    overflow: hidden;
+    border-radius: 15px;
+    background: black;/*rgba(255,255,255,0.1)*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid rgba(255,255,255,0.5);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(5px);
+}
+
+.container .card .content {
+    padding: 20px;
+    text-align: center;
+    transition:0.4s;
+    
+}
+
+.container .card:hover .content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*.container .card .content h2 {
+position: absolute;
+top: -100px;
+right: 30px;
+font-size: 8em;
+color: rgba(255,255,255,0.05);
+pointer-events: Painted;
+
+}*/
+
+.container .card .content h3 {
+    font-size: 1em;
+    color: rgb(243, 207, 4);
+    z-index: 1;
+    
+}
+
+.container .card .content p {
+    font-size: 1em;
+    color: rgb(134, 248, 4);
+    font-weight: 300;
+    font-family: cursive;
+}
+
+.container .card .content a {
+    
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: rgb(235, 3, 243);
+    
+    border-radius: 20px;
+   
+    font-weight: 500;
+ 
+}
+.container .card .content a:hover{
+    background-color:rgb(190, 8, 245);
+	color:rgb(6, 247, 174);
+	
+}
